@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namsate React Lec-1</title>
+</head>
+
+<body>
+
+    <div id="root">
+        <!-- Using HTML -->
+        <!-- <h1>Hello World</h1> -->
+    </div>
+    <!-- This is a way of print Hello world using JavaScript -->
+
+    <!-- <script>
+    let root = document.getElementById('root');
+    let h1 = document.createElement('h1');
+    h1.innerHTML = 'Hello World!';
+    root.appendChild(h1)
+</script> -->
+
+
+
+    <!-- Now we print Hello World Using React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const myElement = React.createElement('div', { className: 'my-class' }, ['Hello!', React.createElement('div', { className: 'my-class' },'HIII')])
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render(myElement);
+    </script>
+
+</body>
+
+</html>
